@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3490E3C-20ED-4870-8701-D30A2CE60404}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sistema.UI</RootNamespace>
+    <AssemblyName>Sistema.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormularioBase\FrmPlantilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioBase\FrmPlantilla.Designer.cs">
+      <DependentUpon>FrmPlantilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmAgregarLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmAgregarLab.Designer.cs">
+      <DependentUpon>FrmAgregarLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAgregarPresentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAgregarPresentacion.Designer.cs">
+      <DependentUpon>frmAgregarPresentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAgregarUsuario.Designer.cs">
+      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConexion.Designer.cs">
+      <DependentUpon>frmConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmLab.Designer.cs">
+      <DependentUpon>FrmLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmMensajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmMensajes.Designer.cs">
+      <DependentUpon>FrmMensajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmPresentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmPresentacion.Designer.cs">
+      <DependentUpon>frmPresentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmPueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmPueba.Designer.cs">
+      <DependentUpon>FrmPueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MDIMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MDIMenu.Designer.cs">
+      <DependentUpon>MDIMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Mensajes.cs" />
+    <Compile Include="Modulos\mostrarModal.cs" />
+    <Compile Include="Modulos\Utilidades.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormularioBase\FrmPlantilla.resx">
+      <DependentUpon>FrmPlantilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmAgregarLab.resx">
+      <DependentUpon>FrmAgregarLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAgregarPresentacion.resx">
+      <DependentUpon>frmAgregarPresentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAgregarUsuario.resx">
+      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConexion.resx">
+      <DependentUpon>frmConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmLab.resx">
+      <DependentUpon>FrmLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmMensajes.resx">
+      <DependentUpon>FrmMensajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmPresentacion.resx">
+      <DependentUpon>frmPresentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmPueba.resx">
+      <DependentUpon>FrmPueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MDIMenu.resx">
+      <DependentUpon>MDIMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Farmacia.BLL\Farmacia.BLL.csproj">
+      <Project>{5e88aadc-aa99-470f-a07d-e0a110f2f7e8}</Project>
+      <Name>Farmacia.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Farmacia.DAL\Farmacia.DAL.csproj">
+      <Project>{05df784d-8998-46fe-8fec-cb831947fecd}</Project>
+      <Name>Farmacia.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Farmacia.Entity\Farmacia.Entity.csproj">
+      <Project>{07802dee-579a-4f78-aca6-b04a436edd00}</Project>
+      <Name>Farmacia.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_mas_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-first-aid-kit-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_user_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_confirm_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_error_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_info_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_ok_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_warning_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_edit_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_buscar_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_salida_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Designer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Designer_64bit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Designer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Designer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1758855466421.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generated Image September 26, 2025 - 10_48AM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-matraz-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-erlenmeyer-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-teléfono-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generated Image September 29, 2025 - 10_50AM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-agregar-42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-base-de-datos-55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-servidor-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-base-de-datos-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-servidor-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-servidor-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-servidor-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-base-de-datos-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-candado-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-servidor-30 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-servidor-30 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-base-de-datos-30 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-candado-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generated Image October 01, 2025 - 2_39PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generated Image October 01, 2025 - 3_57PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-plus-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pills-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pastillas-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-plus-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-más-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-más-261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-más-262.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_actualizar_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_del_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-actualizar-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-32 %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
