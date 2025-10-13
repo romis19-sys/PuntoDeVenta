@@ -123,6 +123,12 @@
     <Compile Include="Formularios\frmUsuario.Designer.cs">
       <DependentUpon>frmUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\gol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\gol.Designer.cs">
+      <DependentUpon>gol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\MDIMenu.cs">
       <SubType>Form</SubType>
     </Compile>
