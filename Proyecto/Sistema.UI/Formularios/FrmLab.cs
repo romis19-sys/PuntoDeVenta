@@ -1,10 +1,12 @@
 ﻿using Farmacia.BLL;
+using Farmacia.DAL;
 using Sistema.UI.FormularioBase;
 using Sistema.UI.Modulos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,6 +23,8 @@ namespace Sistema.UI.Formularios
         {
             InitializeComponent();
         }
+
+
         #region Metodos
         private void ajustarColumnas()
         {
@@ -250,6 +254,5 @@ namespace Sistema.UI.Formularios
             ajustarColumnas();
         }
         #endregion
-
     }
 }

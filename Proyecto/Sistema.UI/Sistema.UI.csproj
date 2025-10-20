@@ -69,6 +69,18 @@
     <Compile Include="FormularioBase\FrmPlantilla.Designer.cs">
       <DependentUpon>FrmPlantilla.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmAbirCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAbirCaja.Designer.cs">
+      <DependentUpon>frmAbirCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmAgregarFarmaco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmAgregarFarmaco.Designer.cs">
+      <DependentUpon>FrmAgregarFarmaco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmAgregarLab.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +104,12 @@
     </Compile>
     <Compile Include="Formularios\frmConexion.Designer.cs">
       <DependentUpon>frmConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmFarmacoC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmFarmacoC.Designer.cs">
+      <DependentUpon>FrmFarmacoC.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmLab.cs">
       <SubType>Form</SubType>
@@ -132,10 +150,17 @@
     <Compile Include="Modulos\Mensajes.cs" />
     <Compile Include="Modulos\mostrarModal.cs" />
     <Compile Include="Modulos\Utilidades.cs" />
+    <Compile Include="Modulos\Variables.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioBase\FrmPlantilla.resx">
       <DependentUpon>FrmPlantilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAbirCaja.resx">
+      <DependentUpon>frmAbirCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmAgregarFarmaco.resx">
+      <DependentUpon>FrmAgregarFarmaco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmAgregarLab.resx">
       <DependentUpon>FrmAgregarLab.cs</DependentUpon>
@@ -148,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmConexion.resx">
       <DependentUpon>frmConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmFarmacoC.resx">
+      <DependentUpon>FrmFarmacoC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmLab.resx">
       <DependentUpon>FrmLab.cs</DependentUpon>
@@ -367,6 +395,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-eliminar-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pastillas-50 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-código-de-barras-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cápsula-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-contenedor-medico-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-portapapeles-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-información-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cajas-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-etiqueta-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dólar-estadounidense-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-matraz-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bolsa-de-dinero-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendario-25 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

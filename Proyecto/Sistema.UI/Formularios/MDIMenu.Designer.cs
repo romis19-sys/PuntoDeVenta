@@ -204,6 +204,7 @@
             this.aperturaDeCajaToolStripMenuItem.Name = "aperturaDeCajaToolStripMenuItem";
             this.aperturaDeCajaToolStripMenuItem.Size = new System.Drawing.Size(267, 32);
             this.aperturaDeCajaToolStripMenuItem.Text = "Apertura de caja";
+            this.aperturaDeCajaToolStripMenuItem.Click += new System.EventHandler(this.aperturaDeCajaToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -302,6 +303,7 @@
             this.listadosDeFarmacosToolStripMenuItem.Name = "listadosDeFarmacosToolStripMenuItem";
             this.listadosDeFarmacosToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.listadosDeFarmacosToolStripMenuItem.Text = "Listados de farmacos";
+            this.listadosDeFarmacosToolStripMenuItem.Click += new System.EventHandler(this.listadosDeFarmacosToolStripMenuItem_Click);
             // 
             // iconInventario
             // 
@@ -460,6 +462,7 @@
             this.Text = "MDIMenu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MDIMenu_FormClosing);
+            this.Load += new System.EventHandler(this.MDIMenu_Load);
             this.Resize += new System.EventHandler(this.MDIMenu_Resize);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();

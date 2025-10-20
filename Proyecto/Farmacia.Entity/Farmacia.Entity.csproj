@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatosConexion.cs" />
+    <Compile Include="oCaja.cs" />
+    <Compile Include="oFarmaco.cs" />
     <Compile Include="oLaboratorio.cs" />
     <Compile Include="oPresentacion.cs" />
     <Compile Include="OUsuario.cs" />
