@@ -22,23 +22,27 @@ namespace Sistema.UI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //var datosconexion = GestorConexion.CargarDatosConexion();
+            //Si querés borrar siempre al iniciar (solo para pruebas)
+            //GestorConexion.BorrarConexion();
 
-            //if (string.IsNullOrWhiteSpace(datosconexion.servidor) ||
-            //   string.IsNullOrWhiteSpace(datosconexion.baseDatos) ||
-            //   string.IsNullOrWhiteSpace(datosconexion.usuario) ||
-            //   string.IsNullOrWhiteSpace(datosconexion.clave))
-            //{
-            //    using (var frm = new frmConexion())
-            //    {
-            //        if (frm.ShowDialog() != DialogResult.OK)
-            //        {
-            //            mensaje.mensajeError("No se configuró la conexión. La aplicación se cerrará.");
-            //            return;
-            //        }
-                    
-            //    }
-            //}
+
+            var datosconexion = GestorConexion.CargarDatosConexion();
+
+            if (string.IsNullOrWhiteSpace(datosconexion.servidor) ||
+               string.IsNullOrWhiteSpace(datosconexion.baseDatos) ||
+               string.IsNullOrWhiteSpace(datosconexion.usuario) ||
+               string.IsNullOrWhiteSpace(datosconexion.clave))
+            {
+                using (var frm = new FrmPueba())
+                {
+                    if (frm.ShowDialog() != DialogResult.OK)
+                    {
+                        mensaje.mensajeError("No se configuró la conexión. La aplicación se cerrará.");
+                        return;
+                    }
+
+                }
+            }
 
             Application.Run(new MDIMenu());
         }

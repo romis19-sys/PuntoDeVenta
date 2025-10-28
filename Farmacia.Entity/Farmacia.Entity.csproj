@@ -42,9 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatosConexion.cs" />
+    <Compile Include="oCaja.cs" />
+    <Compile Include="oCompra.cs" />
+    <Compile Include="oFarmaco.cs" />
     <Compile Include="oLaboratorio.cs" />
     <Compile Include="oPresentacion.cs" />
     <Compile Include="OUsuario.cs" />
+    <Compile Include="oVentas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="resultadoOperacion.cs" />
     <Compile Include="utlidades.cs" />

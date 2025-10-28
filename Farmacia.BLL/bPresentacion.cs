@@ -47,6 +47,14 @@ namespace Farmacia.BLL
                     campoInvalido = "nombrePresentacion"
                 };
 
+            //if (!Validar.soloLetras(presentacion.nombrePresentacion))
+            //    return new resultadoOperacion
+            //    {
+            //        esValido = false,
+            //        mensaje = "Ingrese el nombre del Presentacion.",
+            //        campoInvalido = "nombrePresentacion"
+            //    };
+
             //if (string.IsNullOrWhiteSpace(Presentacion.descripcionPresentacion))
             //    return new resultadoOperacion
             //    {

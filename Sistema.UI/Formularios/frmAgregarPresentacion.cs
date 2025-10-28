@@ -22,6 +22,7 @@ namespace Sistema.UI.Formularios
         {
             InitializeComponent();
 
+            
             this.KeyPress += Utilidades.PasarFocus;
             this.KeyDown += Utilidades.ControlEsc;
         }
@@ -30,11 +31,12 @@ namespace Sistema.UI.Formularios
         {
             InitializeComponent();
 
+            
             this.KeyPress += Utilidades.PasarFocus;
             this.KeyDown += Utilidades.ControlEsc;
 
             txtId.Text = idPresentacion.ToString();
-            txtPresentacion.Text = nombrePresentacion;
+            txtNombrePresentacion.Text = nombrePresentacion;
             //txtDescripcion.Text = descripcionCategoria;
 
             actualizarRegistro = true;
@@ -47,37 +49,36 @@ namespace Sistema.UI.Formularios
             switch (campo)
             {
                 case "nombrePresentacion":
-                    errorIcono.SetError(txtPresentacion, "Este campo es obligatorio.");
-                    txtPresentacion.Focus();
+                    errorIcono.SetError(txtNombrePresentacion, "Este campo es obligatorio.");
+                    txtNombrePresentacion.Focus();
                     break;
-                //case "descripcionCategoria":
-                //    errorIcono.SetError(txtDescripcion, "Este campo es obligatorio.");
-                //    txtDescripcion.Focus();
-                //    break;
+                    //case "descripcionCategoria":
+                    //    errorIcono.SetError(txtDescripcion, "Este campo es obligatorio.");
+                    //    txtDescripcion.Focus();
+                    //    break;
             }
         }
 
         private void LimpiarControles()
         {
             txtId.Text = "0";
-            txtPresentacion.Clear();
+            txtNombrePresentacion.Clear();
             //txtDescripcion.Clear();
-            txtPresentacion.Focus();
+            txtNombrePresentacion.Focus();
         }
 
         #endregion
 
-
-        #region botones de comando
-        private void iconAceptar_Click(object sender, EventArgs e)
+        #region Botones de comando
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 errorIcono.Clear();
 
                 oPresentacion presentacion = new oPresentacion()
                 {
-                    nombrePresentacion = txtPresentacion.Text.Trim(),
+                    nombrePresentacion = txtNombrePresentacion.Text.Trim(),
                     //descripcionCategoria = txtDescripcion.Text.Trim()
                 };
 
@@ -109,18 +110,19 @@ namespace Sistema.UI.Formularios
                 registroAgregado?.Invoke();
                 LimpiarControles();
                 if (actualizarRegistro) Close();
-            //}
-            //catch (Exception)
-            //{
-            //    mensaje.mensajeError("Ocurrió un error inesperado.");
-            //}
+            }
+            catch (Exception)
+            {
+                mensaje.mensajeError("Ocurrió un error inesperado.");
+            }
         }
 
-        private void iconCancelar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Close();    
+            Close();
         }
-
         #endregion
+
+
     }
 }

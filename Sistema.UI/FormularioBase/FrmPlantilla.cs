@@ -16,10 +16,5 @@ namespace Sistema.UI.FormularioBase
         {
             InitializeComponent();
         }
-
-        private void iconAgregar_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

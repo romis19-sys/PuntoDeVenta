@@ -29,13 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtId = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.errorIcon = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -45,21 +43,11 @@
             this.txtTelefono = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtContacto = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNombreLaboratorio = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(12, 171);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(507, 47);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "de laboratorios asociados";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtId
             // 
@@ -73,7 +61,7 @@
             this.txtId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtId.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtId.Location = new System.Drawing.Point(377, 288);
+            this.txtId.Location = new System.Drawing.Point(399, 302);
             this.txtId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtId.Name = "txtId";
             this.txtId.PlaceholderText = "";
@@ -86,7 +74,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 410);
+            this.label7.Location = new System.Drawing.Point(39, 424);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(245, 45);
             this.label7.TabIndex = 27;
@@ -96,7 +84,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 521);
+            this.label6.Location = new System.Drawing.Point(39, 535);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(245, 45);
             this.label6.TabIndex = 25;
@@ -107,42 +95,29 @@
             // 
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(39, 137);
+            this.label4.Location = new System.Drawing.Point(67, 137);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(507, 47);
+            this.label4.Size = new System.Drawing.Size(451, 73);
             this.label4.TabIndex = 23;
-            this.label4.Text = "Sistema centralizado para la gestión y contacto\r\n";
+            this.label4.Text = "Sistema centralizado para la gestión y contacto de laboratorios asociados\r\n\r\n\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 302);
+            this.label3.Location = new System.Drawing.Point(39, 316);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(245, 45);
             this.label3.TabIndex = 22;
             this.label3.Text = "Nombre del Laboratorio";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
-            this.label2.Image = global::Sistema.UI.Properties.Resources.icons8_agregar_42;
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(2, 223);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(595, 53);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Agregar Laboratorio";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
             this.label1.Location = new System.Drawing.Point(110, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(365, 58);
@@ -181,7 +156,7 @@
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.Image = global::Sistema.UI.Properties.Resources.icon_error_50;
             this.btnCancelar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCancelar.Location = new System.Drawing.Point(299, 645);
+            this.btnCancelar.Location = new System.Drawing.Point(321, 659);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(149, 45);
             this.btnCancelar.TabIndex = 30;
@@ -201,7 +176,7 @@
             this.btnAceptar.ForeColor = System.Drawing.Color.White;
             this.btnAceptar.Image = global::Sistema.UI.Properties.Resources.icon_ok_50;
             this.btnAceptar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAceptar.Location = new System.Drawing.Point(17, 645);
+            this.btnAceptar.Location = new System.Drawing.Point(39, 659);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(265, 45);
             this.btnAceptar.TabIndex = 30;
@@ -221,7 +196,7 @@
             this.txtTelefono.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefono.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTelefono.IconLeft = global::Sistema.UI.Properties.Resources.icons8_teléfono_30;
-            this.txtTelefono.Location = new System.Drawing.Point(12, 452);
+            this.txtTelefono.Location = new System.Drawing.Point(39, 466);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -229,6 +204,7 @@
             this.txtTelefono.SelectedText = "";
             this.txtTelefono.Size = new System.Drawing.Size(436, 48);
             this.txtTelefono.TabIndex = 26;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // txtContacto
             // 
@@ -243,14 +219,15 @@
             this.txtContacto.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContacto.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContacto.IconLeft = global::Sistema.UI.Properties.Resources.icons8_usuario_30;
-            this.txtContacto.Location = new System.Drawing.Point(12, 570);
+            this.txtContacto.Location = new System.Drawing.Point(39, 584);
             this.txtContacto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtContacto.Name = "txtContacto";
             this.txtContacto.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtContacto.PlaceholderText = "Ej: Dra. María González";
+            this.txtContacto.PlaceholderText = "Ej: Dr@. María González";
             this.txtContacto.SelectedText = "";
             this.txtContacto.Size = new System.Drawing.Size(436, 48);
             this.txtContacto.TabIndex = 28;
+            this.txtContacto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContacto_KeyPress);
             // 
             // txtNombreLaboratorio
             // 
@@ -265,7 +242,7 @@
             this.txtNombreLaboratorio.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreLaboratorio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNombreLaboratorio.IconLeft = global::Sistema.UI.Properties.Resources.icons8_erlenmeyer_30;
-            this.txtNombreLaboratorio.Location = new System.Drawing.Point(12, 344);
+            this.txtNombreLaboratorio.Location = new System.Drawing.Point(39, 358);
             this.txtNombreLaboratorio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombreLaboratorio.Name = "txtNombreLaboratorio";
             this.txtNombreLaboratorio.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -273,6 +250,20 @@
             this.txtNombreLaboratorio.SelectedText = "";
             this.txtNombreLaboratorio.Size = new System.Drawing.Size(436, 48);
             this.txtNombreLaboratorio.TabIndex = 24;
+            this.txtNombreLaboratorio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreLaboratorio_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
+            this.label2.Image = global::Sistema.UI.Properties.Resources.icons8_más_26;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(160, 229);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(265, 53);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Agregar Laboratorio";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -289,7 +280,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(539, 718);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
@@ -317,8 +307,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtId;
         private Guna.UI2.WinForms.Guna2Button btnCancelar;
         private Guna.UI2.WinForms.Guna2Button btnAceptar;

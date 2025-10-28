@@ -88,5 +88,14 @@ namespace Farmacia.DAL
                 return false;
             }
         }
+        //Solo para pruebas
+        public static void BorrarConexion()
+        {
+            if (File.Exists(archivo))
+            {
+                File.Delete(archivo);
+            }
+        }
+
     }
 }

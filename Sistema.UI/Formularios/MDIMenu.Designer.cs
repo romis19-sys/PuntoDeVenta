@@ -160,7 +160,7 @@
             this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(8)))), ((int)(((byte)(96)))));
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(282, 41);
+            this.toolStripLabel1.Size = new System.Drawing.Size(246, 41);
             this.toolStripLabel1.Text = "Sistema POS";
             // 
             // iconInicio
@@ -204,6 +204,7 @@
             this.aperturaDeCajaToolStripMenuItem.Name = "aperturaDeCajaToolStripMenuItem";
             this.aperturaDeCajaToolStripMenuItem.Size = new System.Drawing.Size(267, 32);
             this.aperturaDeCajaToolStripMenuItem.Text = "Apertura de caja";
+            this.aperturaDeCajaToolStripMenuItem.Click += new System.EventHandler(this.aperturaDeCajaToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -214,7 +215,8 @@
             // 
             this.cerrarCajaToolStripMenuItem.Name = "cerrarCajaToolStripMenuItem";
             this.cerrarCajaToolStripMenuItem.Size = new System.Drawing.Size(267, 32);
-            this.cerrarCajaToolStripMenuItem.Text = "Cerrar caja";
+            this.cerrarCajaToolStripMenuItem.Text = "Historial de caja";
+            this.cerrarCajaToolStripMenuItem.Click += new System.EventHandler(this.cerrarCajaToolStripMenuItem_Click);
             // 
             // ventasToolStripMenuItem
             // 
@@ -239,6 +241,7 @@
             this.cierreDeCajaToolStripMenuItem.Name = "cierreDeCajaToolStripMenuItem";
             this.cierreDeCajaToolStripMenuItem.Size = new System.Drawing.Size(267, 32);
             this.cierreDeCajaToolStripMenuItem.Text = "Cierre de caja";
+            this.cierreDeCajaToolStripMenuItem.Click += new System.EventHandler(this.cierreDeCajaToolStripMenuItem_Click);
             // 
             // iconCatalogo
             // 
@@ -302,6 +305,7 @@
             this.listadosDeFarmacosToolStripMenuItem.Name = "listadosDeFarmacosToolStripMenuItem";
             this.listadosDeFarmacosToolStripMenuItem.Size = new System.Drawing.Size(344, 32);
             this.listadosDeFarmacosToolStripMenuItem.Text = "Listados de farmacos";
+            this.listadosDeFarmacosToolStripMenuItem.Click += new System.EventHandler(this.listadosDeFarmacosToolStripMenuItem_Click);
             // 
             // iconInventario
             // 
@@ -327,12 +331,14 @@
             this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
             this.comprasToolStripMenuItem.Size = new System.Drawing.Size(285, 32);
             this.comprasToolStripMenuItem.Text = "Compras";
+            this.comprasToolStripMenuItem.Click += new System.EventHandler(this.comprasToolStripMenuItem_Click);
             // 
             // historialDeComprasToolStripMenuItem
             // 
             this.historialDeComprasToolStripMenuItem.Name = "historialDeComprasToolStripMenuItem";
             this.historialDeComprasToolStripMenuItem.Size = new System.Drawing.Size(285, 32);
             this.historialDeComprasToolStripMenuItem.Text = "Historial de compras";
+
             // 
             // toolStripSeparator6
             // 
@@ -414,6 +420,7 @@
             this.iconSalir.Name = "iconSalir";
             this.iconSalir.Size = new System.Drawing.Size(200, 70);
             this.iconSalir.Text = "Cerrar sesión";
+            this.iconSalir.Click += new System.EventHandler(this.iconSalir_Click);
             // 
             // panelContenedor
             // 
@@ -422,10 +429,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelContenedor.BackgroundImage = global::Sistema.UI.Properties.Resources.Designer__1_;
             this.panelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panelContenedor.Location = new System.Drawing.Point(251, 83);
+            this.panelContenedor.Location = new System.Drawing.Point(239, 80);
             this.panelContenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1177, 623);
+            this.panelContenedor.Size = new System.Drawing.Size(1102, 623);
             this.panelContenedor.TabIndex = 11;
             // 
             // pictureBox1
@@ -454,7 +461,7 @@
             this.DoubleBuffered = true;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuTitulo;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MDIMenu";
             this.Text = "MDIMenu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

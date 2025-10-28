@@ -72,9 +72,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dCaja.cs" />
+    <Compile Include="dCompra.cs" />
+    <Compile Include="dFarmaco.cs" />
     <Compile Include="dLaboratorio.cs" />
     <Compile Include="dPresentacion.cs" />
     <Compile Include="dUsuarios.cs" />
+    <Compile Include="dVentas.cs" />
     <Compile Include="GestorConexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

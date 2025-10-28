@@ -120,5 +120,163 @@ namespace Sistema.UI.Formularios
             }
             #endregion
         }
+
+        #region "Eventos de las cajas de texto"
+
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsControl(e.KeyChar))
+            {
+                return;
+            }
+
+            // Permitir dígitos
+            if (char.IsDigit(e.KeyChar))
+            {
+                return;
+            }
+
+            // Permitir signo "+" SOLO si:
+            // 1. Está en la primera posición
+            // 2. No existe ya un "+" al inicio
+            if (e.KeyChar == '+')
+            {
+                if (txtTelefono.SelectionStart == 0 && !txtTelefono.Text.StartsWith("+"))
+                {
+                    return;
+                }
+            }
+
+            // Permitir espacio SOLO si:
+            // 1. No está en la primera posición
+            // 2. Hay al menos un carácter antes
+            // 3. El carácter anterior no es un espacio
+            if (e.KeyChar == ' ')
+            {
+                int currentPosition = txtTelefono.SelectionStart;
+
+                // No permitir espacio al inicio
+                if (currentPosition == 0)
+                {
+                    e.Handled = true;
+                    return;
+                }
+
+                // No permitir espacios consecutivos
+                if (currentPosition > 0 && txtTelefono.Text.Length > 0)
+                {
+                    char previousChar = txtTelefono.Text[currentPosition - 1];
+                    if (previousChar != ' ')
+                    {
+                        return;
+                    }
+                }
+            }
+
+            // Si no cumple ninguna condición, bloquear
+            e.Handled = true;
+        }
+
+        private void txtNombreLaboratorio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir tecla de retroceso
+            if (char.IsControl(e.KeyChar))
+            {
+                return;
+            }
+
+            // Permitir letras
+            if (char.IsLetter(e.KeyChar))
+            {
+                return;
+            }
+
+            // Permitir caracteres especiales específicos: " , . : ;
+            if (e.KeyChar == '"' || e.KeyChar == ',' || e.KeyChar == '.' || e.KeyChar == ':' || e.KeyChar == ';')
+            {
+                return;
+            }
+
+            // Permitir espacio SOLO si:
+            // 1. No está en la primera posición
+            // 2. Hay al menos un carácter antes
+            // 3. El carácter anterior no es un espacio
+            if (e.KeyChar == ' ')
+            {
+                int currentPosition = txtNombreLaboratorio.SelectionStart;
+
+                // No permitir espacio al inicio
+                if (currentPosition == 0)
+                {
+                    e.Handled = true;
+                    return;
+                }
+
+                // No permitir espacios consecutivos
+                if (currentPosition > 0 && txtNombreLaboratorio.Text.Length > 0)
+                {
+                    char previousChar = txtNombreLaboratorio.Text[currentPosition - 1];
+                    if (previousChar != ' ')
+                    {
+                        return;
+                    }
+                }
+            }
+
+            // Si no cumple ninguna condición, bloquear
+            e.Handled = true;
+        }
+
+        private void txtContacto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir tecla de retroceso
+            if (char.IsControl(e.KeyChar))
+            {
+                return;
+            }
+
+            // Permitir letras
+            if (char.IsLetter(e.KeyChar))
+            {
+                return;
+            }
+
+            // Permitir caracteres especiales específicos: " , . : ;
+            if (e.KeyChar == '"' || e.KeyChar == ',' || e.KeyChar == '.' || e.KeyChar == ':' || e.KeyChar == ';')
+            {
+                return;
+            }
+
+            // Permitir espacio SOLO si:
+            // 1. No está en la primera posición
+            // 2. Hay al menos un carácter antes
+            // 3. El carácter anterior no es un espacio
+            if (e.KeyChar == ' ')
+            {
+                int currentPosition = txtContacto.SelectionStart;
+
+                // No permitir espacio al inicio
+                if (currentPosition == 0)
+                {
+                    e.Handled = true;
+                    return;
+                }
+
+                // No permitir espacios consecutivos
+                if (currentPosition > 0 && txtContacto.Text.Length > 0)
+                {
+                    char previousChar = txtContacto.Text[currentPosition - 1];
+                    if (previousChar != ' ')
+                    {
+                        return;
+                    }
+                }
+            }
+
+            // Si no cumple ninguna condición, bloquear
+            e.Handled = true;
+        }
+
+        #endregion
     }
 }

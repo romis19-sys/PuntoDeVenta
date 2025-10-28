@@ -1,4 +1,8 @@
-﻿using Sistema.UI.FormularioBase;
+﻿using Farmacia.BLL;
+using Farmacia.DAL;
+using Farmacia.Entity;
+using Sistema.BLL;
+using Sistema.UI.FormularioBase;
 using Sistema.UI.Modulos;
 using System;
 using System.Collections.Generic;
@@ -21,6 +25,10 @@ namespace Sistema.UI.Formularios
         {
             InitializeComponent();
         }
+
+
+        DatosConexion datos = GestorConexion.CargarDatosConexion();
+
         #region Metodos
         private void centrarEtiquetas()
         {
@@ -50,6 +58,7 @@ namespace Sistema.UI.Formularios
         {
             try
             {
+               
                 // si es formulario debe de ser hijo del panelContenedor
                 if (esHijoDelPanelContenedor)
                 {
@@ -87,13 +96,31 @@ namespace Sistema.UI.Formularios
             }
         }
 
+        private void buscarCaja()
+        {
+            try
+            {
+                var cajaAbierta = bCaja.buscarCaja(Variables.idUsuario);
+                if (cajaAbierta.Rows.Count == 0)
+                {
+                    frmAbirCaja frm = new frmAbirCaja(true);
+                    mostrarModal.MostrarConCapaTransparente(this, frm);
+                    toolCaja.Text = "Caja: " + Variables.idCaja;
+                }
+                else
+                {
+                    toolCaja.Text = "Caja: " + cajaAbierta.Rows[0]["CAJA"].ToString();
+                }
+            }
+            catch (Exception)
+            {
+                mensaje.mensajeError("Ocurrió un error al verificar el estado de la caja.");
+            }
+        }
+
         #endregion
 
         #region Eventos del formulario
-        private void MDIMenu_Load(object sender, EventArgs e)
-        {
-            centrarEtiquetas();
-        }
 
         private void MDIMenu_Resize(object sender, EventArgs e)
         {
@@ -120,7 +147,7 @@ namespace Sistema.UI.Formularios
 
         private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new FrmPlantilla(), true);
+            AbrirFormulario(new frmVentas(), true);
         }
 
         private void listadoDeLaboratoriosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -137,5 +164,47 @@ namespace Sistema.UI.Formularios
         {
             AbrirFormulario(new frmPresentacion(), true);
         }
+
+        private void iconSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void listadosDeFarmacosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmFarmacoC(), true);
+        }
+
+        private void aperturaDeCajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            frmAbirCaja frm = new frmAbirCaja(false);
+            mostrarModal.MostrarConCapaTransparente(this, frm);
+        }
+
+        private void MDIMenu_Load(object sender, EventArgs e)
+        {
+            centrarEtiquetas();
+            buscarCaja();
+        }
+
+        private void cierreDeCajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCerrarCaja frm = new frmCerrarCaja();
+            mostrarModal.MostrarConCapaTransparente(this, frm);
+        }
+
+        private void cerrarCajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new frmHistorialCierreCaja(), true);
+        }
+
+        private void comprasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmCompra(), true);
+        }
+
+       
     }
+
 }

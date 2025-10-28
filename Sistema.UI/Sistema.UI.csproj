@@ -69,6 +69,18 @@
     <Compile Include="FormularioBase\FrmPlantilla.Designer.cs">
       <DependentUpon>FrmPlantilla.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmAbirCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAbirCaja.Designer.cs">
+      <DependentUpon>frmAbirCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmAgregarFarmaco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmAgregarFarmaco.Designer.cs">
+      <DependentUpon>FrmAgregarFarmaco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmAgregarLab.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,11 +99,53 @@
     <Compile Include="Formularios\frmAgregarUsuario.Designer.cs">
       <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmBuscarFarmacosCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmBuscarFarmacosCompras.Designer.cs">
+      <DependentUpon>frmBuscarFarmacosCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmBuscarFarmacosVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmBuscarFarmacosVenta.Designer.cs">
+      <DependentUpon>frmBuscarFarmacosVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmCerrarCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmCerrarCaja.Designer.cs">
+      <DependentUpon>frmCerrarCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmCompra.Designer.cs">
+      <DependentUpon>FrmCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmConexion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmConexion.Designer.cs">
       <DependentUpon>frmConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmFarmaco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmFarmaco.Designer.cs">
+      <DependentUpon>FrmFarmaco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmFarmacoC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmFarmacoC.Designer.cs">
+      <DependentUpon>FrmFarmacoC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmHistorialCierreCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmHistorialCierreCaja.Designer.cs">
+      <DependentUpon>frmHistorialCierreCaja.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmLab.cs">
       <SubType>Form</SubType>
@@ -117,11 +171,29 @@
     <Compile Include="Formularios\FrmPueba.Designer.cs">
       <DependentUpon>FrmPueba.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmTerminarCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmTerminarCompra.Designer.cs">
+      <DependentUpon>FrmTerminarCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmTerminarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmTerminarVenta.Designer.cs">
+      <DependentUpon>frmTerminarVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmUsuario.Designer.cs">
       <DependentUpon>frmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmVentas.Designer.cs">
+      <DependentUpon>frmVentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\MDIMenu.cs">
       <SubType>Form</SubType>
@@ -132,10 +204,17 @@
     <Compile Include="Modulos\Mensajes.cs" />
     <Compile Include="Modulos\mostrarModal.cs" />
     <Compile Include="Modulos\Utilidades.cs" />
+    <Compile Include="Modulos\Variables.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioBase\FrmPlantilla.resx">
       <DependentUpon>FrmPlantilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAbirCaja.resx">
+      <DependentUpon>frmAbirCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmAgregarFarmaco.resx">
+      <DependentUpon>FrmAgregarFarmaco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmAgregarLab.resx">
       <DependentUpon>FrmAgregarLab.cs</DependentUpon>
@@ -146,8 +225,29 @@
     <EmbeddedResource Include="Formularios\frmAgregarUsuario.resx">
       <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmBuscarFarmacosCompras.resx">
+      <DependentUpon>frmBuscarFarmacosCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmBuscarFarmacosVenta.resx">
+      <DependentUpon>frmBuscarFarmacosVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmCerrarCaja.resx">
+      <DependentUpon>frmCerrarCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmCompra.resx">
+      <DependentUpon>FrmCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmConexion.resx">
       <DependentUpon>frmConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmFarmaco.resx">
+      <DependentUpon>FrmFarmaco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmFarmacoC.resx">
+      <DependentUpon>FrmFarmacoC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmHistorialCierreCaja.resx">
+      <DependentUpon>frmHistorialCierreCaja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmLab.resx">
       <DependentUpon>FrmLab.cs</DependentUpon>
@@ -161,8 +261,17 @@
     <EmbeddedResource Include="Formularios\FrmPueba.resx">
       <DependentUpon>FrmPueba.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmTerminarCompra.resx">
+      <DependentUpon>FrmTerminarCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmTerminarVenta.resx">
+      <DependentUpon>frmTerminarVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmUsuario.resx">
       <DependentUpon>frmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmVentas.resx">
+      <DependentUpon>frmVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\MDIMenu.resx">
       <DependentUpon>MDIMenu.cs</DependentUpon>
@@ -235,9 +344,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_edit_48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icon_del_48.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_buscar_48.png" />
@@ -328,6 +434,102 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-candado-30 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generated Image October 01, 2025 - 2_39PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generated Image October 01, 2025 - 3_57PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-plus-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pills-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pastillas-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-plus-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-más-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-más-261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-más-262.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_actualizar_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_del_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-actualizar-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-32 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-información-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pastillas-50 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendario-25 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-fabricación-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-código-de-barras-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cápsula-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-portapapeles-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cajas-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-etiqueta-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dólar-estadounidense-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-matraz-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-bolsa-de-dinero-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-contenedor-medico-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_add_50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_save_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_print_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_404.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

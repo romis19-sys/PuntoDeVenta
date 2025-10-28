@@ -35,15 +35,22 @@
             this.label10 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
-            this.btnEditar = new Guna.UI2.WinForms.Guna2Button();
-            this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.dgvListado = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.btnCerrar = new Guna.UI2.WinForms.Guna2Button();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.txtBuscar = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel2.SuspendLayout();
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.iconSalir = new System.Windows.Forms.PictureBox();
+            this.iconAgregar = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconSalir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconAgregar)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -53,93 +60,28 @@
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(247, 9);
+            this.label10.Location = new System.Drawing.Point(0, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.label10.Size = new System.Drawing.Size(1253, 128);
+            this.label10.Size = new System.Drawing.Size(1509, 137);
             this.label10.TabIndex = 66;
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 8;
+            this.guna2Elipse1.TargetControl = this;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
-            this.panel2.Controls.Add(this.btnEliminar);
-            this.panel2.Controls.Add(this.btnEditar);
-            this.panel2.Controls.Add(this.btnGuardar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(239, 679);
+            this.panel2.Size = new System.Drawing.Size(89, 679);
             this.panel2.TabIndex = 75;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BorderColor = System.Drawing.Color.BlanchedAlmond;
-            this.btnEliminar.BorderRadius = 8;
-            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEliminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEliminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEliminar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
-            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Image = global::Sistema.UI.Properties.Resources.icon_del_48;
-            this.btnEliminar.Location = new System.Drawing.Point(1, 411);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(173, 46);
-            this.btnEliminar.TabIndex = 6;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.BorderColor = System.Drawing.Color.BlanchedAlmond;
-            this.btnEditar.BorderRadius = 8;
-            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEditar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEditar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEditar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
-            this.btnEditar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.Image = global::Sistema.UI.Properties.Resources.icon_edit_48;
-            this.btnEditar.Location = new System.Drawing.Point(1, 287);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(173, 46);
-            this.btnEditar.TabIndex = 5;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BorderColor = System.Drawing.Color.BlanchedAlmond;
-            this.btnGuardar.BorderRadius = 8;
-            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnGuardar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGuardar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnGuardar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
-            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Image = global::Sistema.UI.Properties.Resources.icon_mas_48;
-            this.btnGuardar.Location = new System.Drawing.Point(1, 172);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(173, 46);
-            this.btnGuardar.TabIndex = 4;
-            this.btnGuardar.Text = "Nuevo";
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
             // dgvListado
             // 
@@ -161,6 +103,11 @@
             this.dgvListado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvListado.ColumnHeadersHeight = 35;
             this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Nombre,
+            this.Editar,
+            this.Eliminar});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -170,14 +117,14 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvListado.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvListado.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvListado.Location = new System.Drawing.Point(247, 149);
+            this.dgvListado.Location = new System.Drawing.Point(117, 152);
             this.dgvListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvListado.Name = "dgvListado";
             this.dgvListado.ReadOnly = true;
             this.dgvListado.RowHeadersVisible = false;
             this.dgvListado.RowHeadersWidth = 51;
             this.dgvListado.RowTemplate.Height = 35;
-            this.dgvListado.Size = new System.Drawing.Size(1253, 519);
+            this.dgvListado.Size = new System.Drawing.Size(1274, 469);
             this.dgvListado.TabIndex = 76;
             this.dgvListado.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvListado.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -200,40 +147,66 @@
             this.dgvListado.ThemeStyle.RowsStyle.Height = 35;
             this.dgvListado.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvListado.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListado_CellContentClick);
+            this.dgvListado.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvListado_CellPainting);
+            this.dgvListado.Resize += new System.EventHandler(this.dgvListado_Resize);
             // 
-            // btnCerrar
+            // ID
             // 
-            this.btnCerrar.BorderColor = System.Drawing.Color.BlanchedAlmond;
-            this.btnCerrar.BorderRadius = 8;
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCerrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCerrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCerrar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCerrar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
-            this.btnCerrar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Image = global::Sistema.UI.Properties.Resources.icon_salida_48;
-            this.btnCerrar.Location = new System.Drawing.Point(1384, 54);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(109, 46);
-            this.btnCerrar.TabIndex = 77;
-            this.btnCerrar.Text = "Salir";
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.ID.DataPropertyName = "ID";
+            this.ID.FillWeight = 0.00013662F;
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Visible = false;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Presentacion";
+            this.Nombre.FillWeight = 42.78733F;
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MinimumWidth = 6;
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // Editar
+            // 
+            this.Editar.FillWeight = 50.27403F;
+            this.Editar.HeaderText = "";
+            this.Editar.MinimumWidth = 6;
+            this.Editar.Name = "Editar";
+            this.Editar.ReadOnly = true;
+            this.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.FillWeight = 106.9672F;
+            this.Eliminar.HeaderText = "";
+            this.Eliminar.MinimumWidth = 6;
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            this.Eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Eliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(263, 46);
+            this.label1.Location = new System.Drawing.Point(109, 41);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(395, 46);
+            this.label1.Size = new System.Drawing.Size(452, 46);
             this.label1.TabIndex = 78;
-            this.label1.Text = "📑 Listado de Registros";
+            this.label1.Text = "📑 Módulo de Presentación";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 15;
+            this.guna2Elipse2.TargetControl = this.txtBuscar;
             // 
             // txtBuscar
             // 
@@ -248,7 +221,7 @@
             this.txtBuscar.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtBuscar.IconLeft = global::Sistema.UI.Properties.Resources.icons8_search_24;
-            this.txtBuscar.Location = new System.Drawing.Point(750, 53);
+            this.txtBuscar.Location = new System.Drawing.Point(572, 48);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(7);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.PlaceholderText = "Buscar Registro...";
@@ -257,26 +230,75 @@
             this.txtBuscar.TabIndex = 79;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 15;
+            // 
+            // iconSalir
+            // 
+            this.iconSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
+            this.iconSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconSalir.Image = global::Sistema.UI.Properties.Resources.icon_salida_48;
+            this.iconSalir.Location = new System.Drawing.Point(1202, 41);
+            this.iconSalir.Name = "iconSalir";
+            this.iconSalir.Size = new System.Drawing.Size(48, 48);
+            this.iconSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.iconSalir.TabIndex = 80;
+            this.iconSalir.TabStop = false;
+            this.iconSalir.Click += new System.EventHandler(this.iconSalir_Click);
+            // 
+            // iconAgregar
+            // 
+            this.iconAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
+            this.iconAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconAgregar.Image = global::Sistema.UI.Properties.Resources.icon_mas_48;
+            this.iconAgregar.Location = new System.Drawing.Point(1132, 40);
+            this.iconAgregar.Name = "iconAgregar";
+            this.iconAgregar.Size = new System.Drawing.Size(48, 51);
+            this.iconAgregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.iconAgregar.TabIndex = 81;
+            this.iconAgregar.TabStop = false;
+            this.iconAgregar.Click += new System.EventHandler(this.iconAgregar_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(1422, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(89, 679);
+            this.panel1.TabIndex = 82;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 10;
+            this.guna2Elipse4.TargetControl = this.dgvListado;
+            // 
             // frmPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(161)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1511, 679);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.iconAgregar);
+            this.Controls.Add(this.iconSalir);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.dgvListado);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label10);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPresentacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPresentacion";
             this.Load += new System.EventHandler(this.frmPresentacion_Load);
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconSalir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconAgregar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -285,12 +307,18 @@
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         public System.Windows.Forms.Panel panel2;
-        public Guna.UI2.WinForms.Guna2Button btnEliminar;
-        public Guna.UI2.WinForms.Guna2Button btnEditar;
-        public Guna.UI2.WinForms.Guna2Button btnGuardar;
         public Guna.UI2.WinForms.Guna2DataGridView dgvListado;
-        public Guna.UI2.WinForms.Guna2Button btnCerrar;
         public System.Windows.Forms.Label label1;
         public Guna.UI2.WinForms.Guna2TextBox txtBuscar;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private System.Windows.Forms.PictureBox iconSalir;
+        private System.Windows.Forms.PictureBox iconAgregar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewButtonColumn Editar;
+        private System.Windows.Forms.DataGridViewButtonColumn Eliminar;
+        public System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
     }
 }

@@ -16,18 +16,27 @@ namespace Sistema.UI.Formularios
     public partial class FrmPueba : Form
     {
         private Mensajes mensajes = new Mensajes();
+        private string realText = ""; // Guardará el texto real
         public FrmPueba()
         {
             InitializeComponent();
+            this.KeyPress += Utilidades.PasarFocus;
+            this.KeyDown += Utilidades.ControlEsc;
+
+            // Configurar el TextBox
+            txtClave.PasswordChar = '*';
+            txtClave.Multiline = true; // para permitir Enter
+            txtClave.KeyDown += txtClave_KeyDown;
+            txtClave.TextChanged += txtClave_TextChanged;
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        #region "Botones"
+        private void btnCancelar_Click_1(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.Cancel;
             Close();
         }
 
-        private void btnAceptar_Click(object sender, EventArgs e)
+        private void btnAceptar_Click_1(object sender, EventArgs e)
         {
             errorIcono.Clear();
             bool datosValidos = true;
@@ -80,6 +89,35 @@ namespace Sistema.UI.Formularios
                 mensajes.mensajeError("Error al guardar los datos de conexión.");
             }
         }
+        #endregion
+
+        #region "Eventos de las cajas de texto"
+        private void txtClave_TextChanged(object sender, EventArgs e)
+        {
+            // Guardamos el texto real
+            realText = txtClave.Text;
+        }
+
+        private void txtClave_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Si se presiona Shift + Enter
+            if (e.Shift && e.KeyCode == Keys.Enter)
+            {
+                e.SuppressKeyPress = true; // evita salto de línea
+                txtClave.PasswordChar = '\0'; // mostrar texto real
+                txtClave.Text = realText;
+                txtClave.SelectionStart = txtClave.Text.Length; // cursor al final
+            }
+            // Si se presiona solo Enter (sin Shift), ocultamos de nuevo
+            else if (e.KeyCode == Keys.Enter && !e.Shift)
+            {
+                e.SuppressKeyPress = true;
+                txtClave.PasswordChar = '*'; // volver a ocultar
+                txtClave.Text = realText;
+                txtClave.SelectionStart = txtClave.Text.Length;
+            }
+        }
+        #endregion
     }
-    
+
 }

@@ -69,7 +69,7 @@
             this.iconAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconAceptar.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconAceptar.ForeColor = System.Drawing.Color.White;
-            this.iconAceptar.Location = new System.Drawing.Point(109, 105);
+            this.iconAceptar.Location = new System.Drawing.Point(139, 105);
             this.iconAceptar.Name = "iconAceptar";
             this.iconAceptar.Size = new System.Drawing.Size(97, 44);
             this.iconAceptar.TabIndex = 2;

@@ -12,7 +12,7 @@ namespace Farmacia.DAL
     public class dUsuarios
     {
         public DataTable ListarUsuarios()
-        {
+        { 
             DataTable lista = new DataTable();
             
             try
@@ -44,7 +44,7 @@ namespace Farmacia.DAL
             try
             {
                 using (SqlConnection cn = GestorConexion.ObtenerConexion())
-                using (SqlCommand cmd = new SqlCommand("sp_BuscarUsuarios", cn))
+                using (SqlCommand cmd = new SqlCommand("sp_Buscar_Usuarios", cn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@Nombre", nombre);
@@ -159,7 +159,6 @@ namespace Farmacia.DAL
                 {
                     throw new ApplicationException(ex.Message);
                 }
-
             }
         }
 
@@ -192,7 +191,6 @@ namespace Farmacia.DAL
 
             }
         }
-
 
     }
 }

@@ -31,7 +31,7 @@ namespace Farmacia.BLL
             {
                 return usuarioDal.buscarUsuarios(nombre);
             }
-            catch (Exception )
+            catch (Exception)
             {
                 throw new ApplicationException("Error al buscar los resgistros");
             }
@@ -48,7 +48,7 @@ namespace Farmacia.BLL
                 throw new ApplicationException("Error al listar registros.");
             }
         }
-
+        
         private static resultadoOperacion validarUsuario(OUsuario usuario)
         {
 
@@ -91,6 +91,13 @@ namespace Farmacia.BLL
                     mensaje = "Ingrese el email del usuario.",
                     campoInvalido = "email"
                 };
+            //if (!emailDominioValido(usuario.email))
+            //    return new resultadoOperacion
+            //    {
+            //        esValido = false,
+            //        mensaje = "El correo no tiene un dominio correcto.",
+            //        campoInvalido = "email"
+            //    };
 
             if (!Validar.claveSegura(usuario.clave))
                 return new resultadoOperacion
@@ -100,7 +107,12 @@ namespace Farmacia.BLL
                     campoInvalido = "clave"
                 };
             return new resultadoOperacion { esValido = true };
-        }
+        } 
+
+        //private static bool emailDominioValido(string email)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public static resultadoOperacion registrarUsuario(OUsuario usuario)
         {
@@ -188,7 +200,7 @@ namespace Farmacia.BLL
                 
                 if (resultado)
                 {
-                    return "Registro eliminado de forma exitosa";
+                    return "Registro eliminado de con éxito";
                 }
                 else
                 {
